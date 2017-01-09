@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AD11524D-654D-44DE-BBB8-48CB74247DA0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>KKUpdater</RootNamespace>
+    <AssemblyName>KKUpdater</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <DocumentationFile>bin\Debug\KKUpdater.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <DocumentationFile>bin\Release\KKUpdater.XML</DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>.\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CancelException.cs" />
+    <Compile Include="FilePuller\FileListPuller.cs" />
+    <Compile Include="FilePuller\FilePuller.cs" />
+    <Compile Include="HttpDownloader.cs" />
+    <Compile Include="MergedStream.cs" />
+    <Compile Include="PackageUpdater\DeletedListFile.cs" />
+    <Compile Include="PackageUpdater\LocalVersionFile.cs" />
+    <Compile Include="PackageUpdater\ManifestFile.cs" />
+    <Compile Include="Md5Helper.cs" />
+    <Compile Include="PackageUpdater\PatchListFile.cs" />
+    <Compile Include="PackageUpdater\StringListFile.cs" />
+    <Compile Include="PackageUpdater\UpdaterFlagCheckHandler.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="HttpRequester.cs" />
+    <Compile Include="PackageUpdater\Updater.cs" />
+    <Compile Include="PackageUpdater\UpdaterCheckVersionHandler.cs" />
+    <Compile Include="PackageUpdater\UpdaterDecompressHandler.cs" />
+    <Compile Include="PackageUpdater\UpdaterDownloadPackageHandler.cs" />
+    <Compile Include="PackageUpdater\UpdaterException.cs" />
+    <Compile Include="PackageUpdater\UpdaterHandler.cs" />
+    <Compile Include="PackageUpdater\UpdaterHelper.cs" />
+    <Compile Include="PackageUpdater\UpdaterRequestVersionHandler.cs" />
+    <Compile Include="PackageUpdater\UpdaterIdleHandler.cs" />
+    <Compile Include="PackageUpdater\UpdaterVerifyFileHandler.cs" />
+    <Compile Include="PackageUpdater\UpdaterVerifyPackageHandler.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>

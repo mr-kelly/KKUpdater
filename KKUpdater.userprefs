@@ -1,0 +1,30 @@
+﻿<Properties StartupItem="KKUpdater/KKUpdater.csproj">
+  <MonoDevelop.Ide.Workbench ActiveDocument="UpdaterTests/Test.cs">
+    <Files>
+      <File FileName="UpdaterTests/Test.cs" Line="33" Column="74" />
+      <File FileName="KKUpdater/FilePuller/FileListPuller.cs" Line="1" Column="1" />
+      <File FileName="KKUpdater/HttpDownloader.cs" Line="15" Column="1" />
+      <File FileName="KKUpdater/MergedStream.cs" Line="16" Column="1" />
+      <File FileName="KKUpdater/PackageUpdater/LocalVersionFile.cs" Line="16" Column="1" />
+      <File FileName="KKUpdater/PackageUpdater/PatchListFile.cs" Line="12" Column="1" />
+      <File FileName="KKUpdater/PackageUpdater/StringListFile.cs" Line="15" Column="17" />
+      <File FileName="KKUpdater/PackageUpdater/UpdaterFlagCheckHandler.cs" Line="16" Column="1" />
+      <File FileName="KKUpdater/FilePuller/FilePuller.cs" Line="59" Column="5" />
+    </Files>
+    <Pads>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="KKUpdater" expanded="True" />
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.KKUpdater PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/mrkelly/Documents/KSFramework.Pro/KKUpdater/KKUpdater/FilePuller/FileListPuller.cs" line="149" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
