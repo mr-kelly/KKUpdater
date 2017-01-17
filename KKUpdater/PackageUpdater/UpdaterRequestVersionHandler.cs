@@ -116,16 +116,19 @@ namespace KKUpdater.PackageUpdater
         {
             if (req.Error != null)
                 OnError(this, req.Error.Message);
-
-            var bytes = req.DataBytes;
-            if (bytes != null && bytes.Length > 0)
-            {
-                Result = int.Parse(Encoding.UTF8.GetString(req.DataBytes));
-            }
             else
             {
-                OnError(this, "Error bytes!!! {0}", bytes);
+                var bytes = req.DataBytes;
+                if (bytes != null && bytes.Length > 0)
+                {
+                    Result = int.Parse(Encoding.UTF8.GetString(req.DataBytes));
+                }
+                else
+                {
+                    OnError(this, "Error bytes!!! {0}", bytes);
+                }
             }
+
 
             // release
             req.Dispose();
