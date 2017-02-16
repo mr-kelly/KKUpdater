@@ -110,6 +110,9 @@ namespace KKUpdater.FilePuller
                 if (IsFinished)
                     return 1d;
 
+                if (_listFilePuller == null)
+                    return 0;
+
                 var pullerCount = 1;
                 var p = _listFilePuller.Progress;
                 if (PullersList != null)

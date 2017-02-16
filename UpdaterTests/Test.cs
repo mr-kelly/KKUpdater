@@ -149,7 +149,7 @@ namespace UpdaterTests
         public void TestRequsterAsyncHook()
         {
             
-            var zipUrl = "http://cdn.tyhx.tisgame.com/g1-resources-package/trunk/g1.resources.trunk.1.3.0.3.zip";
+            var zipUrl = "http://sjres.icantw.com/g1-resources-package/trunk/g1.resources.trunk.1.3.0.3.zip";
             var req = new HttpRequester(zipUrl);
             req.BeforeReadAsyncHook = (req11, doRead, doStop) =>
             {
@@ -180,7 +180,7 @@ namespace UpdaterTests
         [Test]
         public void TestContinue()
         {
-            var zipUrl = "http://cdn.tyhx.tisgame.com/g1-resources-package/trunk/g1.resources.trunk.1.3.0.3.zip";
+            var zipUrl = "http://sjres.icantw.com/g1-resources-package/trunk/g1.resources.trunk.1.3.0.3.zip";
 //            var zipUrl = "http://dzp79b220mp4w.cloudfront.net/g1-resources-package/trunk/g1.resources.trunk.1.4.0.0.zip"; // very slow, 弱网络
             var savePath = "test_continue.zip";
 
@@ -226,7 +226,7 @@ namespace UpdaterTests
             //            UpdaterRequestVersionHandler.DebugVersionResult = 2;
 
             var isDebug = true;
-            var urlPrefix = "http://cdn.tyhx.tisgame.com/g1-resources-package/trunk";
+            var urlPrefix = "http://sjres.icantw.com/g1-resources-package/trunk";
             var namePrefix = "g1.resources.trunk.1.2.0";
             var upHandlers = UpdaterHelper.CreateAllUpdater("./TestUpdate", urlPrefix, namePrefix,
                 ".resource_version", isDebug);
